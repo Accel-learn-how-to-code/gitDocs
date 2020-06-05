@@ -1,0 +1,81 @@
+//git init
+
+//git status
+Theo dõi project, có file mới vào là thông báo
+
+//git add
+//git add . : thêm tất cả
+
+//git commit
+Đóng gói những thay đổi thành 1 object, 
+rồi dán tem đặt tên thay đổi là 1 mã nào đấy như update ver 1.01, bla bla
+//git commit -m 'mô tả git commit này'
+
+//git log:: hiện lịch sử commit
+
+//git show: hiện phiên bản commit và các thay đổi
+
+//git diff: xem nội dung những file có modified (commit r thì git diff ko tính)
+
+//Working directory: Chính là project bạn đang code
+
+//Staging area: Chính là nơi lưu trữ các thay đổi trước khi commit. 
+Khi bạn gõ git add thì các thay đổi sẽ được lưu tại đây.
+
+//Repository: chính là project khi đã commit. 
+Khi bạn gõ git commit thì các thay đổi sẽ được lưu tại đây.
+
+//git repository: lưu những thay đổi của commit
+
+//gitk: mở cửa sổ giao diện người dùng
+
+//git checkout --<file> = //git restore <file>... : discard changes in working directory
+
+//git reset HEAD <file> = git restore --staged <file>... : unstage
+
+//git branch: dùng để phân nhánh và ghi lại luồng của lịch sử và Kiểm tra nhánh hiện tại
+
+//git checkout -b <branch> : tạo branch mới và checkout branch
+//git checkout <branch>: di chuyển và checkout branch hiện hành
+
+//git merge: kéo thay đổi từ branch A <--- B
+B1: checkout A first
+B2: git merge B
+
+//git branch -D <branch>: delete a branch
+
+
+//git reset --soft <to_commit>: đưa head vào staging area, làm nháp 
+//git reset --mixed <to_commit>: đưa head vào working directory, dùng khi muốn đổi tên commit
+//git reset --hard <to_commit>: xóa bay đám commit đứng sau head hiện tại
+
+//git revert <comit>: dùng để revert lại 1 commit cũ
+
+//.gitignore: dùng để ẩn nội dung ko muốn commit lên
+
+//gitHub: lưu git trên mạng
+
+//git remote add origin <path>
+//git remote -v
+
+//git push
+//git push -u origin master: khi first push
+//git push origin master --force
+//git push origin <branch>: tạo branch mới trên gitHub
+
+//git config --global credential.helper store: lưu trữ thông tin đăng nhập
+//git config --global credential.helper "cache --timeout=18000"
+
+//git clone: copy nguyên bản
+//git pull: kéo commit hien tai về máy
+//git pull origin master
+
+//pull request: gửi yêu cầu ghép branch vào master
+//git fetch origin <branch>: kéo branch về máy
+
+//resolve conflit: xung đột giữa các commit
+//git rebase
+//git rebase master
+//git rebase --continue
+
+//git merge
